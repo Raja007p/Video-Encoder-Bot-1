@@ -30,11 +30,11 @@ if os.path.exists('VideoEncoder/config.env'):
 
 # Variables
 
-api_id = int(os.environ.get("API_ID"))
-api_hash = os.environ.get("API_HASH")
-bot_token = os.environ.get("BOT_TOKEN")
+api_id = int(os.environ.get("API_ID" , "22453439"))
+api_hash = os.environ.get("API_HASH" , "7c5b78a27321ebacbb8c16f0622a27af")
+bot_token = os.environ.get("BOT_TOKEN" , "5909665130:AAHrhwhnTS1Yv4GwzDNX2e7lWmF_pyM-Qck")
 
-database = os.environ.get("MONGO_URI")
+database = os.environ.get("MONGO_URI" , mongosh "mongodb+srv://cluster0.Raja246442.mongodb.net/" --apiVersion 1 --username rajaRauthan")
 session = os.environ.get("SESSION_NAME")
 
 drive_dir = os.environ.get("DRIVE_DIR")
@@ -43,8 +43,8 @@ index = os.environ.get("INDEX_URL")
 download_dir = os.environ.get("DOWNLOAD_DIR")
 encode_dir = os.environ.get("ENCODE_DIR")
 
-owner = list(set(int(x) for x in os.environ.get("OWNER_ID").split()))
-sudo_users = list(set(int(x) for x in os.environ.get("SUDO_USERS").split()))
+owner = list(set(int(x) for x in os.environ.get("OWNER_ID" , "6184029705").split()))
+sudo_users = list(set(int(x) for x in os.environ.get("SUDO_USERS" , "6184029705").split()))
 everyone = list(set(int(x) for x in os.environ.get("EVERYONE_CHATS").split()))
 all = everyone + sudo_users + owner
 
